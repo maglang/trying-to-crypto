@@ -40,8 +40,8 @@ if option == 'Sustainability':
     Thus, the question on the sustainability of blockchain networks. 
 
     A 2019 [study](https://pubs.acs.org/doi/pdf/10.1021/acs.est.9b05687) by Köhler and Pizzol estimated that the Bitcoin network consumed __31.29 TWh
-    of energy__. We won't be good sustainability analysts if we just take that at face value so let's try to make some comparisons to understand
-    Bitcoin's energy consumption relative to others.
+    of energy__. At face value, these numbers don't really mean much so let's take a look at other energy consumption metrics to understand the scale of
+    Bitcoin's energy consumption.
 
     #### Table 1. Energy Consumption by Country, 2018 (unit: TWh)
     Source: [Global Energy Statistical Yearbook 2020](https://yearbook.enerdata.net/electricity/electricity-domestic-consumption-data.html)"""
