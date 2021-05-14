@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import requests
 
 st.sidebar.title("The Case for Cryptocurrency")
 st.sidebar.write("""A source for cryptocurrency research.
@@ -29,8 +30,62 @@ st.title(option)
 st.write()
 if option == 'Stable-ish Coins':
     """
-    Here we check out the coins that are historically awesome. (What's my methodology for determining awesome? WIP.)
+    Still building
     """
+
+if option == 'Potential Moons':
+    """
+    Still building
+    """
+
+if option == 'Crypto Winter':
+    """
+    Still building
+    """
+
+if option == 'Online Chatter':
+    st.write('Source: Stocktwits API')
+    
+    # st.beta_set_page_config(layout="wide")
+    
+    coin_list = ["BTC", "ETH"]
+    tweet_coin = st.selectbox("Choose a coin from the drop down", options =  coin_list)
+    
+    if tweet_coin == 'BTC':
+        r = requests.get('https://api.stocktwits.com/api/2/streams/symbol/BTC.json')
+        
+        data = r.json()
+
+        for message in data['messages']:
+            st.write(message['created_at'])
+            st.write(message['user']['username'])
+            st.image(message['user']['avatar_url'])
+            st.write(message['body'])
+            st.write("")
+            st.write("")
+    
+    if tweet_coin == 'ETH':
+        r = requests.get('https://api.stocktwits.com/api/2/streams/symbol/ETH.json')
+        
+        data = r.json()
+
+        for message in data['messages']:
+            st.write(message['created_at'])
+            st.write(message['user']['username'])
+            st.image(message['user']['avatar_url'])
+            st.write(message['body'])
+            st.write("")
+            st.write("")
+    
+    
+            
+            
+
+
+
+    
+
+
 if option == 'Sustainability':
     """
     ## Why is sustainability an issue for Bitcoin?
@@ -79,7 +134,7 @@ if option == 'Sustainability':
     the more that coins are mined and the more that transactions occur.
 
     On the other hand, there are a lot of arguments that defend Bitcoin. Such arguments include those that compare Bitcoin energy consumption with the investment of banks into 
-    fossil fuels, or the energy consumption of minting new money. However, I think we should veer outside of those arguments. Bitcoin and blockchain technology, after all, are innovations
+    fossil fuels, or the energy consumption of minting new money. However, I think we should veer outside of those arguments. Bitcoin and blockchain technology, after all, are inevitable innovations
     and these have to be responsible and sustainable not in comparison to the old ways but to the new.
 
     The one productive argument I see for this is PoS or Proof-of-Stake, which we will talk about as an alternative to the Bitcoin network.
