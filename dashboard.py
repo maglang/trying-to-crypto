@@ -35,7 +35,7 @@ if option == 'Sustainability':
     """
     ## Why is sustainability an issue for Bitcoin?
 
-    Bitcoin operates on a Proof-of-Work (PoW) protocol. To validate transactions (this is how you earn coins as a miner) on the blockchain,
+    Bitcoin operates on a Proof-of-Work (PoW) protocol. To validate transactions and mine new coins on the blockchain,
     work has to be expended. In this case, work is solving a puzzle using computing power. Computing power uses energy. 
     Thus, the question on the sustainability of blockchain networks. 
 
@@ -74,11 +74,13 @@ if option == 'Sustainability':
     using our earlier comparison, almost 94,962 Britons.
 
     However, these are 2018 numbers. As of March 2021, the Cambridge Bitcoin Electricity Consumption Index estimates the annualised consumption of energy
-    at __149.63 TWh__. That is around __4.78x__ more than its 2018 consumption. Clearly, the Bitcoin blockchain will only increase in energy consumption
+    at __149.63 TWh__. In just three years, Bitcoin is potentially consuming __4.78x__ more energy. 
+    Clearly, the Bitcoin blockchain will only increase in energy consumption
     the more that coins are mined and the more that transactions occur.
 
     On the other hand, there are a lot of arguments that defend Bitcoin. Such arguments include those that compare Bitcoin energy consumption with the investment of banks into 
-    fossil fuels. However, I think we should veer outside of those arguments. It's like saying Bitcoin is the lesser evil, thus, it's okay. Lesser evil is still evil, right?
+    fossil fuels, or the energy consumption of minting new money. However, I think we should veer outside of those arguments. Bitcoin and blockchain technology, after all, are innovations
+    and these have to be responsible and sustainable not in comparison to the old ways but to the new.
 
     The one productive argument I see for this is PoS or Proof-of-Stake, which we will talk about as an alternative to the Bitcoin network.
     """
