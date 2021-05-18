@@ -29,9 +29,10 @@ st.sidebar.write("GitHub Repo for this page: maglang/trying-to-crypto")
 st.title(option)
 st.write()
 if option == 'Stable-ish Coins':
-    """
-    Still building
-    """
+    stableish_coin = st.selectbox("Select a coin here:", 
+    ('BTC | Bitcoin', 'ETH | Ethereum', 'BNB | Binance Coin', 'DOGE | Dogecoin', 'ADA | Cardano', 'XRP | XRP', 
+    'ICP | Internet Computer', 'BCH | Bitcoin Cash', 'UNI | Uniswap', 'LTC | Litecoin', 'LINK | Chainlink', 
+    'XLM | Stellar', 'VET | VeChain', 'THETA | THETA', 'TRX | Tron', 'XMR | Monero'))
 
 if option == 'Potential Moons':
     """
