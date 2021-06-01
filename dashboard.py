@@ -203,6 +203,9 @@ if option == 'Sources and Resources':
     This is an online course that I took on edX. The lectures are pretty straightforward so this is a good start.
     You'll learn a lot about the history of Bitcoin and blockchain technology, as well as Ethereum.
 
+    2. [Cryptocurrency Historical Prices](https://www.kaggle.com/sudalairajkumar/cryptocurrencypricehistory)
+
+    This is the resource I used to get cryptocurrency data, and is sourced from CoinMarketCap.
 
     Special thanks to my friends Noelle Manahan and Fritzy Yanez for joining me on my cryptocurrency journey.
     """
